@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect | College Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🎓 EduConnect</div>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">WELCOME TO EDUCONNECT</p>
+            <h1>Learn. Grow. <span>Achieve.</span></h1>
+            <p>
+                Explore academic programs, meet our faculty,
+                discover campus events and experience a
+                community dedicated to learning and innovation.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#departments" class="btn primary-btn">
+                    Explore Departments
+                </a>
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats">
+        <div class="stat-card">
+            <h2>6+</h2>
+            <p>Departments</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>12+</h2>
+            <p>Courses</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>50+</h2>
+            <p>Faculty Members</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>2000+</h2>
+            <p>Students</p>
+        </div>
+    </section>
+
+    <!-- Departments -->
+    <section class="section" id="departments">
+        <div class="section-heading">
+            <p class="section-label">ACADEMICS</p>
+            <h2>Our Departments</h2>
+            <p>Explore the academic departments of our college.</p>
+        </div>
+
+        <div class="department-grid" id="departmentGrid"></div>
+    </section>
+
+    <!-- Courses -->
+    <section class="section courses-section" id="courses">
+        <div class="section-heading">
+            <p class="section-label">PROGRAMS</p>
+            <h2>Popular Courses</h2>
+            <p>Discover our undergraduate programs.</p>
+        </div>
+
+        <div class="course-grid" id="courseGrid"></div>
+    </section>
+
+    <!-- Faculty -->
+    <section class="section" id="faculty">
+        <div class="section-heading">
+            <p class="section-label">OUR TEAM</p>
+            <h2>Meet Our Faculty</h2>
+            <p>Learn from experienced academic professionals.</p>
+        </div>
+
+        <div class="faculty-grid" id="facultyGrid"></div>
+    </section>
+
+    <!-- Students -->
+    <section class="section students-section" id="students">
+        <div class="section-heading">
+            <p class="section-label">STUDENT COMMUNITY</p>
+            <h2>Student Highlights</h2>
+            <p>Celebrating student achievements and activities.</p>
+        </div>
+
+        <div class="student-grid" id="studentGrid"></div>
+    </section>
+
+    <!-- Events -->
+    <section class="section events-section" id="events">
+        <div class="section-heading">
+            <p class="section-label">CAMPUS LIFE</p>
+            <h2>Upcoming Events</h2>
+            <p>Stay updated with campus activities.</p>
+        </div>
+
+        <div class="event-grid" id="eventGrid"></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+        <div class="section-heading">
+            <p class="section-label">GET IN TOUCH</p>
+            <h2>Contact Our College</h2>
+            <p>Send us your queries or feedback.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>College Information</h3>
+                <p>📍 Hyderabad, Telangana, India</p>
+                <p>📧 info@educonnect.edu</p>
+                <p>📞 +91 98765 43210</p>
+                <p>🕒 Monday – Friday, 9 AM – 4 PM</p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="contactMessage"
+                    placeholder="Your Message"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message
+                </button>
+
+                <p id="contactStatus" class="status-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 EduConnect College Portal. All rights reserved.</p>
+        <p>Designed using HTML, CSS and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
